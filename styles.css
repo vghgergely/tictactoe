@@ -1,0 +1,28 @@
+﻿body {
+}
+
+.row {
+
+}
+
+#playMat {
+    vertical-align: top;
+    display: table-cell;
+    padding-top: 1px;
+}
+
+.cell {
+    border: solid #000;
+    border-width: 3px;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    
+    
+}
+
+.chooser {
+    display: none;
+}
