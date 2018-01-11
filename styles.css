@@ -1,28 +1,113 @@
-﻿body {
+﻿@import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
+
+body {
 }
 
 .row {
-
+    display: block;
+    height: auto;
+    width: auto;
+}
+#playMat {
+  font-size: 70px;
+  color: #E8E8E8;
+  font-family: "Walter Turncoat", cursive;
+  display: table-cell;
+    vertical-align: top;
+    z-index: 0;
+  
+  margin: 30px auto 0 auto;
+  background-color: #497959;
+  padding: 20px 30px;
+  
+  box-shadow: -1px 2px 2px 0px #555, inset 0 0 10px 0 #555;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: #B78240 solid 10px;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+    width: auto;
+    height: auto;
 }
 
-#playMat {
+.grid {
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    pointer-events: none;
+}
+
+/*#playMat {
     vertical-align: top;
     display: table-cell;
     padding-top: 1px;
-}
+    
+    /* THE BG OF THIS COULD BE BOARD WITH CHALK DRAWINGS AND STUFF, SOME CHALK FONT AND ICONS ARE NEEDED THO */
+    /*width: 300px;
+    height: 300px;
+}*/
 
 .cell {
-    border: solid #000;
-    border-width: 3px;
+
+        /*border: solid white;
+        border-width: 3px;*/
     width: 100px;
     height: 100px;
     float: left;
     margin-bottom: 5px;
     margin-right: 5px;
-    
-    
+    text-align: center;
+    line-height: 100px;
+    z-index: 9999;
+    display: inline-block;
 }
 
 .chooser {
     display: none;
 }
+
+
+/*html {
+  background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: -moz-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: -ms-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: -o-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: linear-gradient(90deg, #485563 10%, #29323c 90%);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden
+}*/
+
+
+
+/*body:after {
+  content: "";
+  display: block;
+  position: fixed;
+  -webkit-border-radius: 0.1em 0.1em 0 0.1em;
+  -khtml-border-radius: 0.1em 0.1em 0 0.1em;
+  -moz-border-radius: 0.1em 0.1em 0 0.1em;
+  -ms-border-radius: 0.1em 0.1em 0 0.1em;
+  -o-border-radius: 0.1em 0.1em 0 0.1em;
+  border-radius: 0.1em 0.1em 0 0.1em;
+  width: 50px;
+  height: 8px;
+  background: #f1f1f1;
+  top: 80%;
+  margin-top: 75px;
+  margin-right: 60px;
+  right: 5%;
+  box-shadow: inset 0 -4px 1px rgba(0, 0, 0, 0.3), -1px -1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 rgba(0, 0, 0, 0.3)
+}*/
+
+/*a {
+  color: #ff0
+}*/

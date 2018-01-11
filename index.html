@@ -8,30 +8,43 @@
     <script type="text/javascript" src="scripts.js"></script>
 </head>
 <body>
-<div id="playMat">
-    <div id="top" class="row">
-        <div class="cell" id="00"></div>
-        <div class="cell" id="01"></div>
-        <div class="cell" id="02"></div>
+    <div id="playMat">
+        
+        <div id="top" class="row">
+            <div class="cell" id="00"></div>
+            <div class="cell" id="01"></div>
+            <div class="cell" id="02"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="10"></div>
+            <div class="cell" id="11"></div>
+            <div class="cell" id="12"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="20"></div>
+            <div class="cell" id="21"></div>
+            <div class="cell" id="22"></div>
+        </div>
+        <svg class="grid" style="left: 152px; top: 50px">
+            <line x1="0" y1="0" x2="0" y2="300" style="stroke:white;stroke-width:15" />
+        </svg>
+        <svg class="grid" style="left: 265px; top: 50px">
+            <line x1="0" y1="0" x2="0" y2="300" style="stroke:white;stroke-width:15" />
+        </svg>
+        <svg class="grid" style="left: 55px; top: 142px">
+            <line x1="0" y1="0" x2="300" y2="0" style="stroke:white;stroke-width:15" />
+        </svg>
+        <svg class="grid" style="left: 55px; top: 252px">
+            <line x1="0" y1="0" x2="300" y2="0" style="stroke:white;stroke-width:15" />
+        </svg>
     </div>
-    <div class="row">
-        <div class="cell" id="10"></div>
-        <div class="cell" id="11"></div>    
-        <div class="cell" id="12"></div>
-    </div>
-    <div class="row">
-        <div class="cell" id="20"></div>
-        <div class="cell" id="21"></div>
-        <div class="cell" id="22"></div>
-    </div>
-</div>
-    
-<button id="start">START</button>
-    
-<button class="chooser" id="X">X</button>
-<button class="chooser" id="O">O</button>
-<button id="reset">RESET</button>
-<p id="player"></p>
-<p id="comp"></p>
+
+    <button id="start">START</button>
+
+    <button class="chooser" id="X">X</button>
+    <button class="chooser" id="O">O</button>
+    <button id="reset">RESET</button>
+    <p id="player"></p>
+    <p id="comp"></p>
 </body>
 </html>
