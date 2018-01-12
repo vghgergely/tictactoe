@@ -26,14 +26,14 @@
         for (i = 0; i < table.length; i++) {
             if ((table[i][0] != "") && (table[i][0] == table[i][1]) && (table[i][1] == table[i][2])) {
 
-                alert("win procced horizontal, line: " + table[i][0]);
+                alert((currTurn ? "You " : "The computer ") + "won!");
                 currTurn ? playerScore++ : compScore++;
 
                 won = true;
                 return true;
             }
             if ((table[0][i] != "") && (table[0][i] == table[1][i]) && (table[1][i] == table[2][i])) {
-                alert("win procced vertical, line: " + table[0][i]);
+                alert((currTurn ? "You " : "The computer ") + "won!");
                 currTurn ? playerScore++ : compScore++;
 
                 won = true;
@@ -41,14 +41,14 @@
             }
         }
         if (table[0][0] != "" && table[0][0] == table[1][1] && table[1][1] == table[2][2]) {
-            alert("win procced top left - bot right: " + table[0][0]);
+            alert((currTurn ? "You " : "The computer ") + "won!");
             currTurn ? playerScore++ : compScore++;
 
             won = true;
             return true;
         }
         if (table[2][0] != "" && table[2][0] == table[1][1] && table[1][1] == table[0][2]) {
-            alert("win procced top right - bot left" + table[1][1]);
+            alert((currTurn ? "You " : "The computer ") + "won!");
             currTurn ? playerScore++ : compScore++;
 
             won = true;
