@@ -6,8 +6,9 @@ body {
 .row {
     display: block;
     height: auto;
-    width: auto;
+    width: 400px;
 }
+
 #playMat {
   font-size: 70px;
   color: #E8E8E8;
@@ -31,10 +32,53 @@ body {
   
   background-size: cover;
   background-repeat: no-repeat;
-    width: auto;
-    height: auto;
+    width: 715px;
+    height: 315px;
 }
 
+#table {
+    width: 400px;
+}
+
+#startMenu {
+    position: absolute;
+    font-size: 60px;
+    left: 230px;
+}
+
+#start {
+    background-color: transparent;
+    border: none;
+    font-family: "Walter Turncoat", cursive;
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    left: 50px;
+    top: 115px;
+}
+#scores {
+    display: none;
+    width: 300px;
+}
+
+#playerScoreDiv {
+    position: absolute;
+    left: 400px;
+    top: 0;
+}
+
+#compScoreDiv {
+    position: absolute;
+    left: 400px;
+    top: 100px;
+}
+
+#ticTacToe {
+    position: absolute;
+    left: -18px;
+    top: -76px;
+    width: 500px;
+}
 .grid {
     display: none;
     position: absolute;
@@ -70,8 +114,27 @@ body {
 
 .chooser {
     display: none;
+    position: absolute;
+    top: 200px;
+    left: 87px;
+    width: 500px;
 }
 
+.chooserBtn {
+    background-color: transparent;
+    border: none;
+    font-family: "Walter Turncoat", cursive;
+    color: white;
+    font-size: 60px;
+    margin-right: 10px;
+}
+
+#chooseText {
+    font-size: 30px;
+    position: absolute;
+    top: 40px;
+    left: -68px;
+}
 
 /*html {
   background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%);

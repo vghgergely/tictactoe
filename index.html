@@ -8,43 +8,64 @@
     <script type="text/javascript" src="scripts.js"></script>
 </head>
 <body>
+
     <div id="playMat">
-        
-        <div id="top" class="row">
-            <div class="cell" id="00"></div>
-            <div class="cell" id="01"></div>
-            <div class="cell" id="02"></div>
+        <div id="startMenu">
+            <p id="ticTacToe">Tic-Tac-Toe</p>
+            <button id="start">START</button>
+            
+            <div class="chooser">
+                <button class="chooserBtn" id="X">X</button>
+                <button class="chooserBtn" id="O">O</button>
+                <p id="chooseText">Choose your symbol!</p>
+            </div>
+            
         </div>
-        <div class="row">
-            <div class="cell" id="10"></div>
-            <div class="cell" id="11"></div>
-            <div class="cell" id="12"></div>
+        <div id="table">
+            <div id="top" class="row">
+                <div class="cell" id="00"></div>
+                <div class="cell" id="01"></div>
+                <div class="cell" id="02"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="10"></div>
+                <div class="cell" id="11"></div>
+                <div class="cell" id="12"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="20"></div>
+                <div class="cell" id="21"></div>
+                <div class="cell" id="22"></div>
+            </div>
         </div>
-        <div class="row">
-            <div class="cell" id="20"></div>
-            <div class="cell" id="21"></div>
-            <div class="cell" id="22"></div>
+        <div id="scores">
+            <div id="playerScoreDiv">
+                <p>YOU: <span id="playerScore"></span></p>
+                
+            </div>
+            <div id="compScoreDiv">
+                <p>COMP: <span id="compScore"></span></p>
+                
+            </div>
         </div>
         <svg class="grid" style="left: 152px; top: 50px">
-            <line x1="0" y1="0" x2="0" y2="300" style="stroke:white;stroke-width:15" />
+            <line x1="0" y1="0" x2="0" y2="300" style="stroke: white; stroke-width: 15"/>
         </svg>
         <svg class="grid" style="left: 265px; top: 50px">
-            <line x1="0" y1="0" x2="0" y2="300" style="stroke:white;stroke-width:15" />
+            <line x1="0" y1="0" x2="0" y2="300" style="stroke: white; stroke-width: 15"/>
         </svg>
         <svg class="grid" style="left: 55px; top: 142px">
-            <line x1="0" y1="0" x2="300" y2="0" style="stroke:white;stroke-width:15" />
+            <line x1="0" y1="0" x2="300" y2="0" style="stroke: white; stroke-width: 15"/>
         </svg>
         <svg class="grid" style="left: 55px; top: 252px">
-            <line x1="0" y1="0" x2="300" y2="0" style="stroke:white;stroke-width:15" />
+            <line x1="0" y1="0" x2="300" y2="0" style="stroke: white; stroke-width: 15"/>
         </svg>
     </div>
 
-    <button id="start">START</button>
 
-    <button class="chooser" id="X">X</button>
-    <button class="chooser" id="O">O</button>
-    <button id="reset">RESET</button>
-    <p id="player"></p>
-    <p id="comp"></p>
+<button id="reset">RESET</button>
+<button id="hardReset">HARD RESET</button>
+<!--<p id="player"></p>
+<p id="comp"></p>-->
 </body>
 </html>
