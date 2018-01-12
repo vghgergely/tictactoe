@@ -46,16 +46,38 @@ body {
     left: 230px;
 }
 
-#start {
+.chalk {
     background-color: transparent;
     border: none;
     font-family: "Walter Turncoat", cursive;
     color: white;
+}
+
+#start {
     font-size: 60px;
     position: absolute;
     left: 50px;
     top: 115px;
 }
+
+#resBtns {
+    display: none;
+}
+
+#reset {
+    position: absolute;
+    top: 325px;
+    left: 495px;
+    font-size: 30px;
+}
+
+#hardReset {
+    position: absolute;
+    top: 325px;
+    left: 626px;
+    font-size: 30px;
+}
+
 #scores {
     display: none;
     width: 300px;
@@ -87,20 +109,10 @@ body {
     pointer-events: none;
 }
 
-/*#playMat {
-    vertical-align: top;
-    display: table-cell;
-    padding-top: 1px;
-    
-    /* THE BG OF THIS COULD BE BOARD WITH CHALK DRAWINGS AND STUFF, SOME CHALK FONT AND ICONS ARE NEEDED THO */
-    /*width: 300px;
-    height: 300px;
-}*/
+
 
 .cell {
 
-        /*border: solid white;
-        border-width: 3px;*/
     width: 100px;
     height: 100px;
     float: left;
@@ -136,41 +148,3 @@ body {
     left: -68px;
 }
 
-/*html {
-  background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%);
-  background: -moz-linear-gradient(90deg, #485563 10%, #29323c 90%);
-  background: -ms-linear-gradient(90deg, #485563 10%, #29323c 90%);
-  background: -o-linear-gradient(90deg, #485563 10%, #29323c 90%);
-  background: linear-gradient(90deg, #485563 10%, #29323c 90%);
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden
-}*/
-
-
-
-/*body:after {
-  content: "";
-  display: block;
-  position: fixed;
-  -webkit-border-radius: 0.1em 0.1em 0 0.1em;
-  -khtml-border-radius: 0.1em 0.1em 0 0.1em;
-  -moz-border-radius: 0.1em 0.1em 0 0.1em;
-  -ms-border-radius: 0.1em 0.1em 0 0.1em;
-  -o-border-radius: 0.1em 0.1em 0 0.1em;
-  border-radius: 0.1em 0.1em 0 0.1em;
-  width: 50px;
-  height: 8px;
-  background: #f1f1f1;
-  top: 80%;
-  margin-top: 75px;
-  margin-right: 60px;
-  right: 5%;
-  box-shadow: inset 0 -4px 1px rgba(0, 0, 0, 0.3), -1px -1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 rgba(0, 0, 0, 0.3)
-}*/
-
-/*a {
-  color: #ff0
-}*/
