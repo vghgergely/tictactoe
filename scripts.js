@@ -4,7 +4,7 @@
     // true: player false: computer
     var player = "";
     var comp = "";
-    // these 2 should be <i fa> things and text should be innerHTML instead, hopefully display is not getting fucked up, the table is perfect as it is
+   
     var playing = false;
     var table = [];
     var playerScore = 0;
@@ -22,7 +22,7 @@
 
     function checkIfWon(currTurn) {
         console.log("DURING CHECKIFWON, CURRTURN: " + currTurn);
-        //SOMEHOW MAKE THE FUCKING X OR O GET DRAWN BEFORE ALERT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   
         for (i = 0; i < table.length; i++) {
             if ((table[i][0] != "") && (table[i][0] == table[i][1]) && (table[i][1] == table[i][2])) {
 
@@ -57,22 +57,19 @@
 
     }
 
-    function afterWin() {
-        //SOME GLOWING AFTER WINNING AND STUFF SO IT LOOKS NICE
-    }
-
+   
     function reset() {
         table = [["", "", ""], ["", "", ""], ["", "", ""]];
         $(".cell").text("");
         won = false;
     }
 
-    $("#start").click(function () {
-        
+    $("#start").click(function() {
+
         $(".chooser").toggle();
         table = [["", "", ""], ["", "", ""], ["", "", ""]];
-        
-    })
+
+    });
 
     $("#reset").click(function() {
         table = [["", "", ""], ["", "", ""], ["", "", ""]];
@@ -96,7 +93,7 @@
         $(".grid").hide();
         $("#scores").hide();
         $("#resBtns").hide();
-    })
+    });
 
     $(".chooserBtn").click(function() {
         if (this.id == "X") {
@@ -106,7 +103,7 @@
             player = "O";
             comp = "X";
         }
-        
+
         $(".chooser").show();
         $("#startMenu").hide();
         $(".grid").show();
@@ -114,7 +111,7 @@
         $("#resBtns").show();
         updateScores();
         playing = true;
-    })
+    });
 
 
     $(".cell").click(function() {
